@@ -18,7 +18,7 @@ const PlatosScreen = () => {
     useEffect(() => {
         const fetchPlatos = async () => {
             try {
-                const response = await axios.get('https://api-dishes-5r7a.onrender.com/api/platos');
+                const response = await axios.get('http://44.212.30.203:4000/api/platos');
                 setPlatos(response.data);
             } catch (error) {
                 console.error('Error fetching data:', error);
